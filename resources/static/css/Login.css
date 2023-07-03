@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@300;400&family=Poppins:wght@500&display=swap');
+
+:root{
+  --color-light-50: #F4F6FC;
+
+  --color-dark-50: #1A2429;
+  --color-dark-100: #000000;
+  
+  --color-pink-50: #FF949B;
+  --color-pink-100: #FD4451;
+  
+  --color-gradient: linear-gradient(90deg, var(--color-pink-50), var(--color-pink-100) )
+  
+  
+}
+
+
+*{
+  font-family: Poppins, Sans-Serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  
+}
+
+#container{
+  height: 100vh;
+  background: var(--color-gradient);
+  width: 100%;
+  display: flex;
+ 
+  
+}
+
+#login_form {
+  background-color: var(--color-light-50);
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px;
+  border-radius: 8px;
+  gap: 30px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+  height: fit-content;
+  margin-top: 16em;
+  margin-left: 34.5em;
+}
+
+#form_header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+#form_header h1 {
+  font-size: 40px;
+  position: relative;
+  
+}
+
+#form_header h1::before {
+  position: absolute;
+  content: '';
+  width: 40%;
+  background-color: var(--color-pink-100);
+  height: 3px;
+  bottom: 10px;
+  border-radius: 5px;
+  
+  
+}
+
+#mode_icon{
+  cursor: pointer;
+  font-size: 35px;
+  
+}
+
+#inputs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  
+}
+
+.input-box label{
+  font-size: 14px;
+  color: var(--color-dark-100);
+}
+
+.input-field{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 3px;
+  cursor: text;
+  border-bottom: 1px solid var(--color-pink-50);
+  
+}
+
+.input-field i {
+  font-size: 18px;
+  color: var(--color-dark-100);
+  
+}
+
+.input-field input{
+  border: none;
+  background-color: transparent;
+  width: 260px;
+  font-size: 18px;
+  padding: 0px 5px;
+  
+}
+
+.input-field input:focus {
+  outline: none;
+  
+}
+
+.cadastrar a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--color-dark-100);
+  
+}
+
+
+.cadastrar a:hover {
+  color: var(--color-pink-50);
+  
+  
+}
+
+#login_button {
+  border: none;
+  background: var(--color-pink-100);
+  color: var(--color-dark-100);
+  padding: 7px;
+  font-size: 18px;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#login_button:hover {
+  transform: scale(1.05);
+
+}
+
+#cabeca-imagem{
+ width: 200px;
+}
+
+.imagem{
+   text-align: left;
+   margin-left: 15px;
+   margin-top: -40px;
+}
+
+.span-required {
+ font-size: 12px;
+ color: #cf1010;
+ display: none;
+}

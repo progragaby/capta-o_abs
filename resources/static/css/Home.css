@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@300;400&family=Poppins:wght@500&display=swap');
+
+
+:root{
+ --color-light-50: #F4F6FC;
+
+ --color-dark-50: #1A2429;
+ --color-dark-100: #000000;
+ 
+ --color-pink-50: #FF949B;
+ --color-pink-100: #FD4451;
+
+ --color-gradient: linear-gradient(90deg, var(--color-pink-50), var(--color-pink-100))
+}
+
+*{
+ font-family: Poppins, Sans-Serif;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.body{
+ height: 100vh;
+}
+
+nav.menu-lateral {
+ width: 80px;
+ height: 100%;
+ background-color: var(--color-pink-50);
+ padding: 40px 0 40px 1%;
+ box-shadow: 3px 0 0 var(--color-pink-100);
+ position: fixed;
+ top: 0;
+ left: 0;
+ overflow: hidden;
+ transition: .5s;
+
+}
+
+nav.menu-lateral.expandir {
+ width: 300px;
+}
+
+.btn-expandir {
+ width: 100%;
+ padding-left: 10px;
+}
+
+.btn-expandir > i {
+ color: var(--color-dark-100);
+ font-size: 30px;
+ cursor: pointer;
+ margin-bottom: 25px;
+}
+
+ul{
+ height: 100%;
+ list-style-type: none;
+}
+
+ul li.item-menu a {
+ color: var(--color-dark-100);
+ text-decoration: none;
+ font-size: 20px;
+ padding: 20px 4%;
+ display: flex;
+ margin-bottom: 25px;
+ line-height: 40px;
+
+}
+
+ul li.item-menu a .txt-link {
+  margin-left: 70px;
+  transition: .5s;
+  opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+  margin-left: 40px;
+  opacity: 1;
+}
+
+ul li.item-menu a .icon > i {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+ul li.item-menu{
+  transition: .2s;
+
+}
+
+ul li.ativo{
+   background-color: var(--color-pink-100);
+  
+}
+
+ul li.item-menu:hover {
+  background: var(--color-pink-100);
+
+}
+
+#cabeca-imagem{
+ width: 200px;
+
+}
+
+.imagem{
+  text-align: right;
+  margin-right: 15px;
+  margin-top: -40px;
+}
+
+.frase-efeito {
+ text-align: right;
+ margin-right: 10px;
+}
+
+.frase-efeito h1 {
+font-size: 60px;
+position: relative;
+}
+
+
+.frase-efeito h1::before {
+ position: absolute;
+ right: 21px;
+ content: '';
+ width: 27%;
+ background-color: var(--color-pink-100);
+ height: 3px;
+ bottom: 6px;
+ border-radius: 5px;
+}
